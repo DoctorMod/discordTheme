@@ -1,0 +1,106 @@
+.da-messagesWrapper {
+  background-image: url("https://i.imgur.com/alVmKRO.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  display: block !important;
+  margin: 0 !important;
+}
+
+.da-channelTextArea {
+  display: contents !important;
+}
+
+.da-innerNoAutocomplete, .da-innerAutocomplete, .da-autocomplete, .da-reactionMe {
+  background-image: linear-gradient(135deg, #17536F, #7CB7B8) !important;
+}
+
+.da-selectorSelected, .da-contentHoveredText {
+  background-image: linear-gradient(225deg, #17536F, #7CB7B8) !important;
+}
+
+.container-1YxwTf {
+  border-radius: 8px !important;
+  background-color: #00000055;
+  padding: 10px;
+  margin: 7px;
+}
+
+.da-dividerContent {
+  color: #ddd !important;
+}
+
+.da-description, label, h3, .da-description div {
+  color: #000 !important;
+}
+
+.da-embedLink.da-embedTitle {
+  color: #bbb !important;
+}
+
+.username {
+  color: #3EB3BB;
+}
+
+.discriminator {
+  color: #7DB9BA;
+}
+
+.da-embedInner {
+  border-width: 0px;
+}
+
+.da-embed {
+  transition: all .1s ease-in-out;
+}
+
+.da-embed:hover {
+  transform: scale(1.025);
+}
+
+a {
+  color: #3EB3BB !important;
+}
+
+.da-badge {
+  background-color: #3EB3BB !important;
+}
+
+.da-reaction {
+  background-color: #02122B !important;
+}
+
+.da-reactionCount {
+  display: none;
+   !important;
+}
+
+.icon-2Po-VO {
+  content: ":ok_hand:";
+  display: none;
+}
+
+.container-3-pyIM {
+  padding: 0 !important;
+}
+
+.da-membersWrap {
+  display: none !important;
+}
+
+.da-contentSelectedText {
+  background-image: linear-gradient(135deg, #17536F, #7CB7B8) !important;
+}
+
+.da-base.da-typing {
+  bottom: 45px;
+  max-width: 350px;
+  right: 0;
+  background-image: linear-gradient(225deg, #17536F, #7CB7B8) !important;
+}
