@@ -62,7 +62,7 @@
   --streaming-color: #673ab7;
   --offline-color: #acacac;
   --main-font: 'Whitney';
-  --code-font: 'Raleway';
+  --code-font: 'Consolas';
   --backdrop-overlay: rgba(0,0,0,0.8);
   --backdrop-image: var(--background-image);
   --backdrop-position: var(--background-position);
