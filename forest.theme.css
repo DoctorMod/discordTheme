@@ -1,126 +1,84 @@
-//META{"name":"Forest","description":"A calming minimalist background with a cool gradient accent.","author":"DoctorMod","version":"0.2"}*//
-.da-messagesWrapper {
-  background-image: url("https://i.imgur.com/alVmKRO.jpg") !important;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+/**
+ * @name Forest
+ * @author Doctor_Mod
+ * @version 2
+ * @description Highly customizable theme for BetterDiscord built in ClearVision
+ * @source https://github.com/DoctorMod/discordTheme
+ * @website https://doctormod.sytes.net
+*/
 
-::-webkit-scrollbar {
-  display: none;
-}
+@import url('https://clearvision.gitlab.io/v6/main.css');
 
-form {
-  display: block !important;
-  margin: 0 !important;
-}
-
-.da-channelTextArea {
-  display: contents !important;
-}
-
-.da-selectorSelected, .da-channel:hover a, .da-contentHoveredText {
-  background-image: linear-gradient(225deg, #17536F, #7CB7B8) !important;
-}
-
-.da-wrapper a, .da-contentSelectedText, .da-selected a, .da-innerNoAutocomplete, .da-innerAutocomplete, .da-autocomplete, .da-reactionMe {
-  background-image: linear-gradient(135deg, #17536F, #7CB7B8) !important;
-}
-
-.container-1YxwTf {
-  border-radius: 8px !important;
-  background-color: #00000055;
-  padding: 10px;
-  margin: 7px;
-}
-
-.da-hasDropdown, .da-searchBarInner {
-  background-color: #0A3C59 !important;
-}
-
-.container-2Thooq {
-  background-color: #05132D !important;
-}
-
-.da-dividerContent {
-  color: #ddd !important;
-}
-
-.da-description, label, h3, .da-description div {
-  color: #000 !important;
-}
-
-.da-embedLink.da-embedTitle {
-  color: #bbb !important;
-}
-
-.username {
-  color: #3EB3BB;
-}
-
-.discriminator {
-  color: #7DB9BA;
-}
-
-.da-embedInner {
-  border-width: 0px;
-}
-
-.da-embed {
-  transition: all .1s ease-in-out;
-}
-
-.da-embed:hover {
-  transform: scale(1.025);
-}
-
-.da-circleIconButton {
-  background-color: #7CB7B8 !important;
-}
-
-a {
-  color: #3EB3BB !important;
-}
-
-.da-badge, .da-selected::before {
-  background-color: #3EB3BB !important;
-}
-
-.da-reaction {
-  background-color: #02122B !important;
-}
-
-.da-reactionCount {
-  display: none;
-}
-
-.icon-2Po-VO {
-  content: ":ok_hand:";
-  display: none;
-}
-
-.container-3-pyIM {
-  padding: 0 !important;
-}
-
-.da-membersWrap {
-  display: none !important;
-}
-
-.da-base.da-typing {
-  bottom: 45px;
-  max-width: 350px;
-  right: 0;
-  background-image: linear-gradient(225deg, #17536F, #7CB7B8) !important;
-}
-
-.da-container .wrapper-1Rf91z {
-  background-image: linear-gradient(180deg, #17536F, #7CB7B8) !important;
-}
-
-.da-directionColumn .da-privateChannels, .scroller-2wx7Hm {
-  background-image: linear-gradient(38deg, #05132D, #0A3C59) !important;
-}
-
-.da-headerBar {
-  background-image: linear-gradient(322deg, #05132D, #0A3C59) !important;
+:root {
+  --main-color: #2ca4dc;
+  --hover-color: #7cb7b8;
+  --success-color: #3eb3bb;
+  --danger-color: #982929;
+  --url-color: #b027a6;
+  --background-image: url('https://i.imgur.com/alVmKRO.jpg');
+  --background-shading: 54%;
+  --background-position: center;
+  --background-size: cover;
+  --background-repeat: no-repeat;
+  --background-attachment: fixed;
+  --background-brightness: 100%;
+  --background-contrast: 100%;
+  --background-saturation: 100%;
+  --background-grayscale: 0%;
+  --background-invert: 0%;
+  --background-blur: 0px;
+  --background-overlay: rgba(0,0,0,0.6);
+  --user-popout-image: var(--background-image);
+  --user-popout-position: center;
+  --user-popout-size: cover;
+  --user-popout-repeat: no-repeat;
+  --user-popout-attachment: fixed;
+  --user-popout-brightness: 100%;
+  --user-popout-contrast: 100%;
+  --user-popout-saturation: 157%;
+  --user-popout-grayscale: 38%;
+  --user-popout-invert: 0%;
+  --user-popout-blur: 3px;
+  --user-modal-image: var(--background-image);
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-repeat: no-repeat;
+  --user-modal-attachment: fixed;
+  --user-modal-brightness: 100%;
+  --user-modal-contrast: 108%;
+  --user-modal-saturation: 119%;
+  --user-modal-grayscale: 0%;
+  --user-modal-invert: 0%;
+  --user-modal-blur: 3px;
+  --home-icon: url('https://clearvision.gitlab.io/icons/discord.svg');
+  --home-position: center;
+  --home-size: 40px;
+  --channel-unread: #bababa;
+  --channel-color: rgba(255,255,255,0.48);
+  --muted-color: rgba(255,255,255,0.1);
+  --online-color: #8bc34a;
+  --idle-color: #ffc107;
+  --dnd-color: #f44336;
+  --streaming-color: #673ab7;
+  --offline-color: #acacac;
+  --main-font: 'Whitney';
+  --code-font: 'Raleway';
+  --backdrop-overlay: rgba(0,0,0,0.8);
+  --backdrop-image: var(--background-image);
+  --backdrop-position: var(--background-position);
+  --backdrop-size: var(--background-size);
+  --backdrop-repeat: var(--background-repeat);
+  --backdrop-attachment: var(--background-attachment);
+  --backdrop-brightness: var(--background-brightness);
+  --backdrop-contrast: var(--background-contrast);
+  --backdrop-saturation: var(--background-saturation);
+  --backdrop-invert: var(--background-invert);
+  --backdrop-grayscale: var(--background-grayscale);
+  --backdrop-sepia: var(--background-sepia);
+  --backdrop-blur: var(--background-blur);
+  --bd-blue: var(--main-color);
+  --bd-blue-hover: var(--hover-color);
+  --bd-blue-active: var(--hover-color);
+  --channels-width: 220px;
+  --members-width: 210px;
 }
